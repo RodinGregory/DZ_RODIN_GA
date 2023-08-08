@@ -24,7 +24,7 @@ def okved():
     df_telecom_companies=pd.DataFrame(columns=['name', 'full_name', 'inn', 'okved', 'kpp'])
 
     #Читаем список файлов в  egrul.json.zip
-    with zipfile.ZipFile("/home/grisha/airflow/egrul.json.zip" , 'r') as zipobj:
+    with zipfile.ZipFile("/home/rtstudent/egrul.json.zip" , 'r') as zipobj:
         file_names = zipobj.namelist()
         for name in file_names:
             # Распаковываем один файл
